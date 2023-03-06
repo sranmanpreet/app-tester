@@ -4,11 +4,17 @@ let iframeElement = document.getElementById("iframeElement");
 
 loadButton.addEventListener('click', loadInstance);
 
-function loadInstance(){
+function loadInstance() {
     const instanceUrl = instanceUrlInput.value;
-    if(instanceUrl){
+    if (instanceUrl) {
         iframeElement.src = instanceUrl;
     }
 }
 
-instanceUrlInput.value = "http://localhost:8080/"
+iframeElement.addEventListener('load', () => {
+    const iframeDocument = iframeElement.contentWindow.document;
+    iframeDocument.addEventListener('click', (e) => { console.log(e.srcElement.value || e.srcElement.innerHtml || e.srcElement.innerText); })
+});
+
+instanceUrlInput.value = "http://127.0.0.1:5500/app-one/index.html";
+loadInstance();
