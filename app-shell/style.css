@@ -1,0 +1,97 @@
+html, body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: #ebebeb;
+    text-align: center;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    height: 2rem;
+    padding: 0.5rem;
+    position: sticky;
+}
+
+header #home {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: auto;
+    color: azure;
+    line-height: 2rem;
+    cursor: pointer;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 0.3rem 1rem;
+    font-size: .8rem;
+}
+
+.content {
+    width: 80%;
+    height: 86%;
+    margin: auto;
+    padding: 1rem;
+    background-color: white;   
+}
+
+.form {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    justify-items: center;
+    background: rgb(246, 246, 246);
+    padding: 0.5rem;
+    margin: 0.25rem;
+    border-radius: 0.5rem
+}
+
+.form-control {
+    font-size: 0.9rem;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form-control * {
+    margin: 0.2rem
+}
+
+.form-control input[type=text] {
+    width: 100%;
+}
+
+.form-control input[type=button] {
+    background:rgb(115, 175, 120);
+    color: rgb(255, 255, 255);
+    border: 1px solid lightblue;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+}
+
+.iframe-container {
+    height: 87%;
+    background: rgb(246, 246, 246);
+    padding: 0.5rem;
+    margin: 0.25rem;
+    border-radius: 0.5rem;
+}
+
+.iframe-container iframe {
+    width: 100%;
+    height: 100%;
+}
